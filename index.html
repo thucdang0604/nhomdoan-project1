@@ -43,26 +43,23 @@
     <h2>Xin chào!</h2>
     <p>Đây là trang chủ của tôi.</p>
 
-    <div class="card">
-      <img src="https://www.w3schools.com/w3images/team2.jpg" alt="Avatar" style="width:100%">
-      <div class="container">
-        <h4><b>John Doe</b></h4> 
-        <p>Architect & Engineer</p> 
-      </div>
-    </div>
+    <button onclick="myFunction()">Nhấn vào đây</button>
 
-    <div class="card">
-      <img src="https://www.w3schools.com/w3images/team1.jpg" alt="Avatar" style="width:100%">
-      <div class="container">
-        <h4><b>Jane Doe</b></h4> 
-        <p>Designer</p> 
-      </div>
+    <div id="myDIV" style="display:none">
+      Đây là một đoạn văn bản.
     </div>
 
 </div>
 
 <script>
-    // Đây là nơi bạn có thể thêm mã JavaScript
+function myFunction() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+}
 </script>
 
 </body>
