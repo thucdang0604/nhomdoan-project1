@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "draggabilly": "^3.0.0",
+    "jquery-bridget": "^3.0.1"
+  }
+}
