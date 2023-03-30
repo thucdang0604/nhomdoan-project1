@@ -1,0 +1,359 @@
+@font-face {
+    font-family: font1;
+    font-display: block;
+    src: url(/fonts/font1.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font2;
+    font-display: block;
+    src: url(/fonts/font2.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font3;
+    font-display: block;
+    src: url(/fonts/font3.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font4;
+    font-display: block;
+    src: url(/fonts/font4.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font5;
+    font-display: block;
+    src: url(/fonts/font5.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font6;
+    font-display: block;
+    src: url(/fonts/font6.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font7;
+    font-display: block;
+    src: url(/fonts/font7.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font8;
+    font-display: block;
+    src: url(/fonts/font8.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font9;
+    font-display: block;
+    src: url(/fonts/font9.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font10;
+    font-display: block;
+    src: url(/fonts/font10.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font11;
+    font-display: block;
+    src: url(/fonts/font11.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font12;
+    font-display: block;
+    src: url(/fonts/font12.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font13;
+    font-display: block;
+    src: url(/fonts/font13.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font14;
+    font-display: block;
+    src: url(/fonts/font14.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font15;
+    font-display: block;
+    src: url(/fonts/font15.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font16;
+    font-display: block;
+    src: url(/fonts/font16.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font17;
+    font-display: block;
+    src: url(/fonts/font17.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font18;
+    font-display: block;
+    src: url(/fonts/font18.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font19;
+    font-display: block;
+    src: url(/fonts/font19.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font20;
+    font-display: block;
+    src: url(/fonts/font20.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font21;
+    font-display: block;
+    src: url(/fonts/font21.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font22;
+    font-display: block;
+    src: url(/fonts/font22.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font23;
+    font-display: block;
+    src: url(/fonts/font23.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font24;
+    font-display: block;
+    src: url(/fonts/font24.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font25;
+    font-display: block;
+    src: url(/fonts/font25.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font26;
+    font-display: block;
+    src: url(/fonts/font26.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font27;
+    font-display: block;
+    src: url(/fonts/font27.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font28;
+    font-display: block;
+    src: url(/fonts/font28.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font29;
+    font-display: block;
+    src: url(/fonts/font29.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font30;
+    font-display: block;
+    src: url(/fonts/font30.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font31;
+    font-display: block;
+    src: url(/fonts/font31.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font32;
+    font-display: block;
+    src: url(/fonts/font32.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font33;
+    font-display: block;
+    src: url(/fonts/font33.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font34;
+    font-display: block;
+    src: url(/fonts/font34.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font35;
+    font-display: block;
+    src: url(/fonts/font35.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font36;
+    font-display: block;
+    src: url(/fonts/font36.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font37;
+    font-display: block;
+    src: url(/fonts/font37.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font38;
+    font-display: block;
+    src: url(/fonts/font38.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font39;
+    font-display: block;
+    src: url(/fonts/font39.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font40;
+    font-display: block;
+    src: url(/fonts/font40.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font41;
+    font-display: block;
+    src: url(/fonts/font41.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font42;
+    font-display: block;
+    src: url(/fonts/font42.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font43;
+    font-display: block;
+    src: url(/fonts/font43.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font44;
+    font-display: block;
+    src: url(/fonts/font44.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font45;
+    font-display: block;
+    src: url(/fonts/font45.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font46;
+    font-display: block;
+    src: url(/fonts/font46.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font47;
+    font-display: block;
+    src: url(/fonts/font47.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font_otf_1;
+    font-display: block;
+    src: url(/fonts/font_otf_1.otf) format('opentype')
+}
+
+@font-face {
+    font-family: font_otf_2;
+    font-display: block;
+    src: url(/fonts/font_otf_2.otf) format('opentype')
+}
+
+@font-face {
+    font-family: font_otf_3;
+    font-display: block;
+    src: url(/fonts/font_otf_3.otf) format('opentype')
+}
+
+@font-face {
+    font-family: font_cn_1;
+    font-display: block;
+    src: url(/fonts/font_cn_1.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font_cn_2;
+    font-display: block;
+    src: url(/fonts/font_cn_2.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font_cn_3;
+    font-display: block;
+    src: url(/fonts/font_cn_3.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font_cn_4;
+    font-display: block;
+    src: url(/fonts/font_cn_4.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font_cn_5;
+    font-display: block;
+    src: url(/fonts/font_cn_5.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font_cn_6;
+    font-display: block;
+    src: url(/fonts/font_cn_6.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font_cn_7;
+    font-display: block;
+    src: url(/fonts/font_cn_7.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font_cn_8;
+    font-display: block;
+    src: url(/fonts/font_cn_8.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font_cn_9;
+    font-display: block;
+    src: url(/fonts/font_cn_9.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font_cn_10;
+    font-display: block;
+    src: url(/fonts/font_cn_10.ttf) format('truetype')
+}
