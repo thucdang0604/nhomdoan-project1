@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+<link rel="stylesheet" href="./cssfont.css">
+<style>
+    p{
+        
+        font-size: 50px;
+        font-family: font1;
+       
+    }
+    div{
+        width: 100%;
+        height: 800px;
+        overflow: hidden;
+    }
+  
+.draggable {
+  width: 140px;
+  height: 140px;
+  cursor: move;
+}
+.draggable.is-pointer-down {
+  background: rgba(0, 153, 255, 0);
+}
+.draggable.is-dragging { opacity: 0.7; }
+img{
+    width: 100%;
+    height: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  } 
+      
+</style>
+<body>
+<div style="position: relative;">
+    <img src="../ảnh/pngtree-word-calligraphy-poster-background-picture-image_1100130.jpg" alt="ảnh nền">
+    <p style="position: absolute; top: 50%; left:50%; transform:translate(-50%,-50%);" class="draggable" id="text">thư pháp</p>
+</div>
+
+
+<div>
+    Lựa chọn font chữ :
+    <select name="font" id="fontSelect" class="font-control" style="height: 50px; width: 150px; font-size: 20px; font-family: font1; ">
+        <option value="font1" style="font-family: font1;">thư pháp 1</option>
+        <option value="font2" style="font-family: font2;">thư pháp 2</option>
+        <option value="font3" style="font-family: font3;">thư pháp 3</option>
+        <option value="font4" style="font-family: font4;">thư pháp 4</option>
+        <option value="font5" style="font-family: font5;">thư pháp 5</option>
+        <option value="font6" style="font-family: font6;">thư pháp 6</option>
+        <option value="font7" style="font-family: font7;">thư pháp 7</option>
+        <option value="font8" style="font-family: font8;">thư pháp 8</option>
+        <option value="font9" style="font-family: font9;">thư pháp 9</option>
+        <option value="font10" style="font-family: font10;">thư pháp 10</option>
+        <option value="font11" style="font-family: font11;">thư pháp 11</option>
+        <option value="font12" style="font-family: font12;">thư pháp 12</option>
+        <option value="font13" style="font-family: font13;">thư pháp 13</option>
+        <option value="font14" style="font-family: font14;">thư pháp 14</option>
+        <option value="font15" style="font-family: font15;">thư pháp 15</option>
+        <option value="font16" style="font-family: font16;">thư pháp 16</option>
+        <option value="font17" style="font-family: font17;">thư pháp 17</option>
+        <option value="font18" style="font-family: font18;">thư pháp 18</option>
+        <option value="font19" style="font-family: font19;">thư pháp 19</option>
+        <option value="font20" style="font-family: font20;">thư pháp 20</option>
+        <option value="font21" style="font-family: font21;">thư pháp 21</option>
+        <option value="font22" style="font-family: font22;">thư pháp 22</option>
+        <option value="font23" style="font-family: font23;">thư pháp 23</option>
+        <option value="font24" style="font-family: font24;">thư pháp 24</option>
+        <option value="font25" style="font-family: font25;">thư pháp 25</option>
+        <option value="font26" style="font-family: font26;">thư pháp 26</option>
+        <option value="font27" style="font-family: font27;">thư pháp 27</option>
+        <option value="font28" style="font-family: font28;">thư pháp 28</option>
+        <option value="font29" style="font-family: font29;">thư pháp 29</option>
+        <option value="font30" style="font-family: font30;">thư pháp 30</option>
+        <option value="font31" style="font-family: font31;">thư pháp 31</option>
+        <option value="font32" style="font-family: font32;">thư pháp 32</option>
+        <option value="font33" style="font-family: font33;">thư pháp 33</option>
+        <option value="font34" style="font-family: font34;">thư pháp 34</option>
+        <option value="font35" style="font-family: font35;">thư pháp 35</option>
+        <option value="font36" style="font-family: font36;">thư pháp 36</option>
+        <option value="font37" style="font-family: font37;">thư pháp 37</option>
+        <option value="font38" style="font-family: font38;">thư pháp 38</option>
+        <option value="font39" style="font-family: font39;">thư pháp 39</option>
+        <option value="font40" style="font-family: font40;">thư pháp 40</option>
+        <option value="font41" style="font-family: font41;">thư pháp 41</option>
+        <option value="font42" style="font-family: font42;">thư pháp 42</option>
+        <option value="font43" style="font-family: font43;">thư pháp 43</option>
+        <option value="font44" style="font-family: font44;">thư pháp 44</option>
+        <option value="font45" style="font-family: font45;">thư pháp 45</option>
+        <option value="font46" style="font-family: font46;">thư pháp 46</option>
+        <option value="font47" style="font-family: font47;">thư pháp 47</option>
+        <option value="font_otf_1" style="font-family: font_otf_1;">thư pháp 48</option>
+        <option value="font_otf_2" style="font-family: font_otf_2;">thư pháp 49</option>
+        <option value="font_otf_3" style="font-family: font_otf_3;">thư pháp 50</option>
+        <option value="font_cn_1" style="font-family: font_cn_1;">thư pháp 51</option>
+        <option value="font_cn_2" style="font-family: font_cn_2;">thư pháp 52</option>
+        <option value="font_cn_3" style="font-family: font_cn_3;">thư pháp 53</option>
+        <option value="font_cn_4" style="font-family: font_cn_4;">thư pháp 54</option>
+        <option value="font_cn_5" style="font-family: font_cn_5;">thư pháp 55</option>
+        <option value="font_cn_6" style="font-family: font_cn_6;">thư pháp 56</option>
+        <option value="font_cn_7" style="font-family: font_cn_7;">thư pháp 57</option>
+        <option value="font_cn_8" style="font-family: font_cn_8;">thư pháp 58</option>
+        <option value="font_cn_9" style="font-family: font_cn_9;">thư pháp 59</option>
+        <option value="font_cn_10" style="font-family: font_cn_10;">thư pháp 60</option>
+        
+       
+    </select>
+    <br>
+    <br>
+    Nhập chữ muốn viết: 
+    <input type="text" name="nhap" id="textSelect">
+    <input type="submit" name="Submit" value="OK">
+
+
+
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://unpkg.com/draggabilly@3/dist/draggabilly.pkgd.js"></script>
+<script>
+    let $draggable = $('.draggable').draggabilly();
+        document.getElementById("fontSelect").addEventListener("change", function() {
+          document.getElementById("text").style.fontFamily = this.value;
+          document.getElementById("fontSelect").style.fontFamily = this.value;
+        });
+        document.getElementById('textSelect').addEventListener("change", function() {
+            document.getElementById("text").innerHTML= this.value;
+        });
+</script>
+</body>
+</html>
