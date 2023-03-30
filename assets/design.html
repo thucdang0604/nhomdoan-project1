@@ -5,16 +5,10 @@
 <link rel="stylesheet" href="./cssfont.css">
 <style>
     p{
-        
         font-size: 50px;
         font-family: font1;
-       
     }
-    div{
-        width: 100%;
-        height: 800px;
-        overflow: hidden;
-    }
+
   
 .draggable {
   width: 140px;
@@ -35,12 +29,14 @@ img{
       
 </style>
 <body>
-<div style="position: relative;">
-    <img src="../ảnh/pngtree-word-calligraphy-poster-background-picture-image_1100130.jpg" alt="ảnh nền">
+    <div style="display: flex; justify-content: center; align-items: center;">
+<div class="nen" style="width: 960px; height: 540px; transform: scale(1); transform-origin: center center; background-color: rgb(255, 255, 255);">
+<div style="position: relative; overflow: hidden;" >
+    <img width="100% height=100%" src="../ảnh/pngtree-word-calligraphy-poster-background-picture-image_1100130.jpg" alt="ảnh nền">
     <p style="position: absolute; top: 50%; left:50%; transform:translate(-50%,-50%);" class="draggable" id="text">thư pháp</p>
 </div>
-
-
+</div>
+</div>
 <div>
     Lựa chọn font chữ :
     <select name="font" id="fontSelect" class="font-control" style="height: 50px; width: 150px; font-size: 20px; font-family: font1; ">
@@ -111,8 +107,9 @@ img{
     <br>
     Nhập chữ muốn viết: 
     <input type="text" name="nhap" id="textSelect">
-    <input type="submit" name="Submit" value="OK">
-
+    <br><br>
+    Chọn màu chữ:
+    <input type="color" name="color" id="colorSelect">
 
 
 </div>
@@ -126,6 +123,9 @@ img{
         });
         document.getElementById('textSelect').addEventListener("change", function() {
             document.getElementById("text").innerHTML= this.value;
+        });
+        document.getElementById('colorSelect').addEventListener("change", function() {
+            document.getElementById("text").style.color= this.value;
         });
 </script>
 </body>
