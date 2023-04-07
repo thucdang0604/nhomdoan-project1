@@ -3,36 +3,15 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
 <link rel="stylesheet" href="./cssfont.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
-    p{
-        font-size: 50px;
-        font-family: font1;
-    }
-
-  
-.draggable {
-  width: 140px;
-  height: 140px;
-  cursor: move;
-}
-.draggable.is-pointer-down {
-  background: rgba(0, 153, 255, 0);
-}
-.draggable.is-dragging { opacity: 0.7; }
-img{
-    width: 100%;
-    height: 800px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  } 
-      
+ 
 </style>
 <body>
     <div style="display: flex; justify-content: center; align-items: center;">
 <div class="nen" style="width: 960px; height: 540px; transform: scale(1); transform-origin: center center; background-color: rgb(255, 255, 255);">
 <div style="position: relative; overflow: hidden;" >
-    <img width="100% height=100%" src="../ảnh/pngtree-word-calligraphy-poster-background-picture-image_1100130.jpg" alt="ảnh nền">
+    <img class="nenvietdd" id="nenviet" width="100% height=100%" src="/nenviet/70.jpg" alt="ảnh nền">
     <p style="position: absolute; top: 50%; left:50%; transform:translate(-50%,-50%);" class="draggable" id="text">thư pháp</p>
 </div>
 </div>
@@ -109,7 +88,22 @@ img{
     <input type="text" name="nhap" id="textSelect">
     <br><br>
     Chọn màu chữ:
-    <input type="color" name="color" id="colorSelect">
+    <input type="color" name="color" id="colorSelect" >
+    <br><br>
+    
+
+    <div class="w3-dropdown-click">
+        <button onclick="myFunction() " class="w3-button w3-black">Hình Nền</button>
+        <div id="Demo" class="w3-dropdown-content w3-bar-block w3-card-4 w3-animate-zoom" onclick="changeImage()">
+          <a  class="w3-bar-item w3-button"><img id="anh" src="/nenviet/43.jpg" alt="nen43"></a>
+          <a href="#" class="w3-bar-item w3-button">Link 2</a>
+          <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        </div>
+      </div>
+      <!-- <button onclick="changeImage()">Chọn ảnh</button> -->
+
+
+  
 
 
 </div>
@@ -127,6 +121,25 @@ img{
         document.getElementById('colorSelect').addEventListener("change", function() {
             document.getElementById("text").style.color= this.value;
         });
+        document.getElementById('Demo').addEventListener("change", function() {
+            document.getElementById("nenviet").style.backgroundImage = this.value;
+        });
 </script>
+<script>
+    function myFunction() {
+      var x = document.getElementById("Demo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+    </script>
+    <script>
+        function changeImage(){
+            document.getElementById("nenviet").src = this.value;
+        }
+
+    </script>
 </body>
 </html>
