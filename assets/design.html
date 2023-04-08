@@ -5,17 +5,69 @@
 <link rel="stylesheet" href="./cssfont.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
- 
+
 </style>
+
+  <script>
+    var texts = []; // added an array to store the texts
+    var position = 0; // added a variable to store the position of the text
+    
+    function updateText() {
+      var input = document.getElementById("input");
+      var text = document.getElementById("text");
+      var list = document.getElementById("list");
+      
+      if (input.value) {
+        texts.push(input.value); // added the input value to the array
+    
+        var span = document.createElement("span"); // created a span element to display the text on the image
+        span.className = "text";
+        span.innerHTML = input.value;
+        span.style.top = position + "px"; // set the top position of the span
+        text.appendChild(span); // added the span to the overlay
+    
+        var item = document.createElement("div");
+        item.className = "item";
+        item.innerHTML = input.value;
+    
+        var deleteButton = document.createElement("button");
+        deleteButton.className = "delete";
+        deleteButton.innerHTML = "Delete";
+        deleteButton.onclick = function() {
+          text.removeChild(span); // removed the span from the overlay
+          list.removeChild(item);
+          var index = texts.indexOf(input.value); // found the index of the input value in the array
+          if (index > -1) {
+            texts.splice(index, 1); // removed the input value from the array
+          }
+        };
+    
+        item.appendChild(deleteButton);
+        list.appendChild(item);
+    
+        input.value = "";
+        position += 20; // increased the position by 20px
+      }
+    }
+    </script>
+
+
 <body>
-    <div style="display: flex; justify-content: center; align-items: center;">
-<div class="nen" style="width: 960px; height: 540px; transform: scale(1); transform-origin: center center; background-color: rgb(255, 255, 255);">
-<div style="position: relative; overflow: hidden;" >
-    <img class="nenvietdd" id="nenviet" width="100% height=100%" src="/nenviet/70.jpg" alt="ảnh nền">
-    <p style="position: absolute; top: 50%; left:50%; transform:translate(-50%,-50%);" class="draggable" id="text">thư pháp</p>
+
+<div id="container">
+  <img  id="center" class="center" src="/nenviet/47.jpg" width="80%">
+    <div style="position: absolute; top: 50%; left:50%;" class="draggable"><span id="text"></span> </div>
 </div>
 </div>
-</div>
+
+<!-- <div class="container">
+  <img src="https://picsum.photos/500" alt="Image" class="image">
+  <div id="overlay" class="overlay">
+  </div>
+  </div> -->
+  <input type="text" id="input" placeholder="Enter text here">
+  <button onclick="updateText()">Update</button>
+  <div id="list" class="list"></div>
 <div>
     Lựa chọn font chữ :
     <select name="font" id="fontSelect" class="font-control" style="height: 50px; width: 150px; font-size: 20px; font-family: font1; ">
@@ -79,67 +131,85 @@
         <option value="font_cn_8" style="font-family: font_cn_8;">thư pháp 58</option>
         <option value="font_cn_9" style="font-family: font_cn_9;">thư pháp 59</option>
         <option value="font_cn_10" style="font-family: font_cn_10;">thư pháp 60</option>
-        
-       
     </select>
     <br>
     <br>
-    Nhập chữ muốn viết: 
-    <input type="text" name="nhap" id="textSelect">
-    <br><br>
     Chọn màu chữ:
     <input type="color" name="color" id="colorSelect" >
     <br><br>
+    <!-- -------------------------------------------------------------------------------- -->
     
+    </div>
+    <button class="open-button" onclick="openForm()">Open Background</button>
 
-    <div class="w3-dropdown-click">
-        <button onclick="myFunction() " class="w3-button w3-black">Hình Nền</button>
-        <div id="Demo" class="w3-dropdown-content w3-bar-block w3-card-4 w3-animate-zoom" onclick="changeImage()">
-          <a  class="w3-bar-item w3-button"><img id="anh" src="/nenviet/43.jpg" alt="nen43"></a>
-          <a href="#" class="w3-bar-item w3-button">Link 2</a>
-          <a href="#" class="w3-bar-item w3-button">Link 3</a>
-        </div>
-      </div>
-      <!-- <button onclick="changeImage()">Chọn ảnh</button> -->
-
-
+    <div class="form-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+        <h1>Background</h1>
+        <img src="/nenviet/48.jpg" width="50" onclick="changeImage(event)">
+        <img src="/nenviet/47.jpg" width="50" onclick="changeImage(event)">
+        <img src="/nenviet/49.jpg" width="50" onclick="changeImage(event)">
+        <img src="/nenviet/50.jpg" width="50" onclick="changeImage(event)">
+        <img src="/nenviet/51.jpg" width="50" onclick="changeImage(event)">
+        <img src="/nenviet/52.jpg" width="50" onclick="changeImage(event)">
+        <img src="/nenviet/53.jpg" width="50" onclick="changeImage(event)">
+        <img src="/nenviet/54.jpg" width="50" onclick="changeImage(event)">
+        <img src="/nenviet/55.jpg" width="50" onclick="changeImage(event)">
+        <img src="/nenviet/56.jpg" width="50" onclick="changeImage(event)">
+        <img src="/nenviet/57.jpg" width="50" onclick="changeImage(event)">
+        <img src="/nenviet/58.jpg" width="50" onclick="changeImage(event)">
+        <img src="/nenviet/59.jpg" width="50" onclick="changeImage(event)">
+        <img src="/nenviet/60.jpg" width="50" onclick="changeImage(event)">
+        <img src="/nenviet/61.jpg" width="50" onclick="changeImage(event)">
+        <img src="/nenviet/62.jpg" width="50" onclick="changeImage(event)">
+        <img src="/nenviet/63.jpg" width="50" onclick="changeImage(event)">
+        <img src="/nenviet/64.jpg" width="50" onclick="changeImage(event)">
+        <img src="/nenviet/65.jpg" width="50" onclick="changeImage(event)">
+        <img src="/nenviet/66.jpg" width="50" onclick="changeImage(event)">
+        <img src="/nenviet/67.jpg" width="50" onclick="changeImage(event)">
+        <img src="/nenviet/68.jpg" width="50" onclick="changeImage(event)">
+        <img src="/nenviet/69.jpg" width="50" onclick="changeImage(event)">
+        <img src="/nenviet/70.jpg" width="50" onclick="changeImage(event)">
+      
+    
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+        <!-- -------------------------------------------------------------------------------- -->
+    <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+    
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+    </script>
+    
+   
   
 
 
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://unpkg.com/draggabilly@3/dist/draggabilly.pkgd.js"></script>
-<script>
-    let $draggable = $('.draggable').draggabilly();
+ <script>
+   let $draggable = $('.draggable').draggabilly();
         document.getElementById("fontSelect").addEventListener("change", function() {
-          document.getElementById("text").style.fontFamily = this.value;
+         document.getElementById("text").style.fontFamily = this.value;
           document.getElementById("fontSelect").style.fontFamily = this.value;
-        });
-        document.getElementById('textSelect').addEventListener("change", function() {
-            document.getElementById("text").innerHTML= this.value;
         });
         document.getElementById('colorSelect').addEventListener("change", function() {
             document.getElementById("text").style.color= this.value;
-        });
-        document.getElementById('Demo').addEventListener("change", function() {
-            document.getElementById("nenviet").style.backgroundImage = this.value;
-        });
-</script>
-<script>
-    function myFunction() {
-      var x = document.getElementById("Demo");
-      if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-      } else { 
-        x.className = x.className.replace(" w3-show", "");
-      }
-    }
-    </script>
-    <script>
-        function changeImage(){
-            document.getElementById("nenviet").src = this.value;
-        }
+        }); 
+    
+          // Một hàm để thay đổi hình ảnh khi chọn vào một hình ảnh khác
+          function changeImage(event) {
+            // Lấy phần tử img bằng id
+            var image = document.getElementById("center");
+            
+            // Thay đổi thuộc tính src của phần tử img bằng thuộc tính src của hình ảnh được chọn
+            image.src = event.target.src;
+          }
+        </script>
 
-    </script>
 </body>
 </html>
