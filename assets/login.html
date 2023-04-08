@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>login</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="styleoflogin.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <div class="login-box">
+        <h2>Login</h2>
+        <form>
+          <div class="user-box">
+            <input type="text" id="username" name="username" required="">
+            <label>Username</label>
+          </div>
+          <div class="user-box">
+            <input type="password" id="password" name="password" required="">
+            <label>Password</label>
+          </div>
+          <a href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+           <button type="button" onclick="login()"> Login </button>
+          </a>
+          <a href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <button type="button" onclick="register()">Đăng ký</button>
+          </a>
+          
+        </form>
+      </div>
+
+
+
+
+      <script>
+        function login() {
+          var username = document.getElementById("username").value;
+          var password = document.getElementById("password").value;
+          if (username.includes(" ") || username.length < 4)  {
+            alert("Tên đăng nhập phải có từ 4 ký tự và không chứa khoảng trắng.");
+            return;
+          }
+          if (password.length < 8) {
+            alert("Mật khẩu phải có từ 8 ký tự trở lên.");
+            return;
+          }
+          var storedUsername = localStorage.getItem("username");
+          var storedPassword = localStorage.getItem("password");
+          // Check if the input matches the stored data
+          if (username == storedUsername && password == storedPassword){
+            alert("Bạn đã đăng nhập thành công");
+            window.location.href = "/tanh2310/index.html";
+            return false;
+          }
+          else{
+            alert("Tên đăng nhập hoặc mật khẩu không chính xác.");
+          }
+        }
+        function register() {
+          var username = document.getElementById("username").value;
+          var password = document.getElementById("password").value;
+          if (username.includes(" ") || username.length < 4) {
+            alert("Tên đăng nhập phải có từ 4 ký tự và không chứa khoảng trắng.");
+            return;
+          }
+          if (password.length < 8) {
+            alert("Mật khẩu phải có từ 8 ký tự trở lên.");
+            return;
+          }
+          localStorage.setItem("username", username);
+          localStorage.setItem("password", password);
+          alert("Bạn đã đăng ký thành công với tên đăng nhập " + username );
+          document.getElementById("username").value = "";
+          document.getElementById("password").value = "";
+        }
+       
+        </script>
+
+
+
+
+</body>
+</html>
