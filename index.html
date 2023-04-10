@@ -7,157 +7,30 @@
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    
-    <style>
-      .dropbox {
-        background-color: #00a1ff;
-        color: white;
-        padding: 16px;
-        font-size: 16px;
-        border: none;
-        cursor: pointer;
-      
-      }
-      
-      .dropdown {
-        position: relative;
-       margin-right: auto;
-        display: inline;
-      }
-      
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-      }
-      
-      .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-      }
-      
-      .dropdown-content a:hover {background-color: #f1f1f1}
-      
-      .dropdown:hover .dropdown-content {
-        display: block;
-      }
-      
-      .dropdown:hover .dropb {
-        background-color: #3e8e41;
-      }
-     
-      h3 {
-        color: black;
-      }
-      p{
-        color: black;
-      }
-      div.gallery {
-  margin: 15px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 180px;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
-.name{
-  margin-left: 50% ;
-}
-body{
-  background-color: rgb(232, 230, 230);
-}
-.logo img {
-  float: left;
-  width: 150px;
-  height: auto;
-  opacity: 80%;
-}
-main{
-  max-width: 1200px;
-  margin: auto;
-}
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: red;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
-}
-
-#myBtn:hover {
-  background-color: #555;
-}
-      </style>
+  <link rel="stylesheet" href="./assets/style.css">
       </head>
-      <body>
-
-      
-</head>
 <body >
-  <div class="main">
-<div class="logo">
-<img src="./ảnh/logo.png">
-</div>
-  </div>
-  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(8, 57, 102);">
-    <div class="container px-4">
-      <a class="navbar-brand" href="/">
-        <span style="color:#ffffff; font-size:26px; font-weight:bold; letter-spacing: 1px;"></span>
-        
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
-          class="navbar-toggler-icon"></span></button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="./assets/login.html">Login</a></li>
-          <li class="nav-item"><a class="nav-link" href="./assets/design.html">Design</a></li>
-          <li class="nav-item"><a class="nav-link" href="./about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="./assets/Grid.html">Contact Us</a></li>
-        </ul>
-      </div>
+          <div class="navbar" id="navbar">
+            <a class="active" href="./index.html">Home</a> 
+            <a href="./assets/design.html">Design</a> 
+            <a href="./assets/Grid.html">Contact</a> 
+            <a href="./assets/login.html">Login</a>
+          </div>
+    <div class="main">
+      <div class="logo">
+        <img src="./ảnh/logo-removebg-preview.png">
+        </div>
     </div>
-  
-    <form class="d-flex">
-      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-danger" type="submit">Search</button> 
-    </form>  
-    
+
     <div class="dropdown">
       <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
-        Dropdown button
+        Main
       </button> 
       <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#section1">Khái Niệm</a></li>
-        <li><a class="dropdown-item" href="#section2">Lịch Sử</a></li>
-        <li><a class="dropdown-item" href="#section3">Cách viết và Bút</a></li>
-        <li><a class="dropdown-item" href="#section4">Lợi ích</a></li>
+        <li><a class="dropdown-item" href="#section1">CONCEPTION</a></li>
+        <li><a class="dropdown-item" href="#section2">HISTORY</a></li>
+        <li><a class="dropdown-item" href="#section3">HOW TO WRITE AND PEN</a></li>
+        <li><a class="dropdown-item" href="#section4">BENEFIT</a></li>
       </ul>
     </div>
   </nav> 
@@ -275,17 +148,16 @@ main{
     </p>
   </div>
   <div id="section4" class="container-fluid bg-info" style="padding:100px 20px;">
-    <h1>Benefit</h1>
+    <h1>BENEFIT</h1>
     <p>Learning to write Calligraphy has many benefits for the learner. It is a healthy hobby and helps you relax, reduce stress and fatigue. It also helps you accumulate more knowledge about culture and practice perseverance and focus.</p>
     <p>In addition, learning to write Calligraphy also helps you join a community of people who love writing and share your passion with those who have the same interests.</p>
   </div>
   
-  <div class="container mt-5">
-    <h1 style="text-align: center; font-family:'Courier New', Courier, monospace;">Types of Calligraphy</h1> <br>
+  <div>
+    <h1 style="text-align: center;  font-family:'Courier New', Courier, monospace;">Types of Calligraphy</h1> <br>
     <div class="row">
       
-      <div class="col-sm-4">
-       
+      <div class="col-sm-4" >
         <h3>Traditional Calligraphy</h3>
         <p>Calligraphy is the art of creating beautiful writing. It originated from China and was introduced to Vietnam in the early years of the Han dynasty.</p>
         <p>The first calligraphic work of Vietnam found was the line "Đại Tuỳ Cửu Chân quận Bảo An đạo tràng chi bi văn" written in the "triện" style on the forehead of a stele in Trường Xuân village (Thanh Hóa).</p>
@@ -337,7 +209,8 @@ main{
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
       }
-      </script>
+     
+        </script>
 </body>
 </html>
  
