@@ -2,9 +2,8 @@
 <html>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
-<link rel="stylesheet" href="./cssfont.css">
+<link rel="stylesheet" href="CSS/cssfont.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="./style.css">
 <style>
 
 </style>
@@ -15,17 +14,16 @@
     
     function updateText() {
       var input = document.getElementById("input");
-      var text = document.getElementById("text");
+      var text = document.getElementById("txtext");
       var list = document.getElementById("list");
       
       if (input.value) {
-        texts.push(input.value); // added the input value to the array
-    
-        var span = document.createElement("span"); // created a span element to display the text on the image
-        span.className = "text";
-        span.innerHTML = input.value;
-        span.style.top = position + "px"; // set the top position of the span
-        text.appendChild(span); // added the span to the overlay
+       texts.push(input.value); // added the input value to the array
+        var p = document.createElement("p"); // created a span element to display the text on the image
+        p.className = "text";
+        p.innerHTML = input.value;
+        p.style.top = position + "px"; // set the top position of the span
+        text.appendChild(p); // added the span to the overlay
     
         var item = document.createElement("div");
         item.className = "item";
@@ -35,7 +33,7 @@
         deleteButton.className = "delete";
         deleteButton.innerHTML = "Delete";
         deleteButton.onclick = function() {
-          text.removeChild(span); // removed the span from the overlay
+          text.removeChild(p); // removed the span from the overlay
           list.removeChild(item);
           var index = texts.indexOf(input.value); // found the index of the input value in the array
           if (index > -1) {
@@ -56,13 +54,14 @@
 <body>
   <div class="navbar">
     <a href="../index.html">Home</a> 
-    <a class="active" href="./assets/design.html">Design</a> 
+    <a class="active" href="./design.html">Design</a> 
     <a href="./Grid.html">Contact</a> 
     <a href="./login.html">Login</a>
   </div>
-<div id="container">
+  
+<div >
   <img  id="center" class="center" src="nenviet/47.jpg" width="80%">
-    <div style="position: absolute; top: 50%; left:50%;" class="draggable"><span id="text"></span> </div>
+    <div id="tx" style="position: absolute; top: 40%; left:50%;"><p id="txtext"></p></div>
 </div> 
 </div>
   <input type="text" id="input" placeholder="Enter text here">
@@ -70,72 +69,72 @@
   <div id="list" class="list"></div>
 <div>
     Lựa chọn font chữ :
-    <select name="font" id="fontSelect" class="font-control" style="height: 50px; width: 150px; font-size: 20px; font-family: font1; ">
-        <option value="font1" style="font-family: font1;">thư pháp 1</option>
-        <option value="font2" style="font-family: font2;">thư pháp 2</option>
-        <option value="font3" style="font-family: font3;">thư pháp 3</option>
-        <option value="font4" style="font-family: font4;">thư pháp 4</option>
-        <option value="font5" style="font-family: font5;">thư pháp 5</option>
-        <option value="font6" style="font-family: font6;">thư pháp 6</option>
-        <option value="font7" style="font-family: font7;">thư pháp 7</option>
-        <option value="font8" style="font-family: font8;">thư pháp 8</option>
-        <option value="font9" style="font-family: font9;">thư pháp 9</option>
-        <option value="font10" style="font-family: font10;">thư pháp 10</option>
-        <option value="font11" style="font-family: font11;">thư pháp 11</option>
-        <option value="font12" style="font-family: font12;">thư pháp 12</option>
-        <option value="font13" style="font-family: font13;">thư pháp 13</option>
-        <option value="font14" style="font-family: font14;">thư pháp 14</option>
-        <option value="font15" style="font-family: font15;">thư pháp 15</option>
-        <option value="font16" style="font-family: font16;">thư pháp 16</option>
-        <option value="font17" style="font-family: font17;">thư pháp 17</option>
-        <option value="font18" style="font-family: font18;">thư pháp 18</option>
-        <option value="font19" style="font-family: font19;">thư pháp 19</option>
-        <option value="font20" style="font-family: font20;">thư pháp 20</option>
-        <option value="font21" style="font-family: font21;">thư pháp 21</option>
-        <option value="font22" style="font-family: font22;">thư pháp 22</option>
-        <option value="font23" style="font-family: font23;">thư pháp 23</option>
-        <option value="font24" style="font-family: font24;">thư pháp 24</option>
-        <option value="font25" style="font-family: font25;">thư pháp 25</option>
-        <option value="font26" style="font-family: font26;">thư pháp 26</option>
-        <option value="font27" style="font-family: font27;">thư pháp 27</option>
-        <option value="font28" style="font-family: font28;">thư pháp 28</option>
-        <option value="font29" style="font-family: font29;">thư pháp 29</option>
-        <option value="font30" style="font-family: font30;">thư pháp 30</option>
-        <option value="font31" style="font-family: font31;">thư pháp 31</option>
-        <option value="font32" style="font-family: font32;">thư pháp 32</option>
-        <option value="font33" style="font-family: font33;">thư pháp 33</option>
-        <option value="font34" style="font-family: font34;">thư pháp 34</option>
-        <option value="font35" style="font-family: font35;">thư pháp 35</option>
-        <option value="font36" style="font-family: font36;">thư pháp 36</option>
-        <option value="font37" style="font-family: font37;">thư pháp 37</option>
-        <option value="font38" style="font-family: font38;">thư pháp 38</option>
-        <option value="font39" style="font-family: font39;">thư pháp 39</option>
-        <option value="font40" style="font-family: font40;">thư pháp 40</option>
-        <option value="font41" style="font-family: font41;">thư pháp 41</option>
-        <option value="font42" style="font-family: font42;">thư pháp 42</option>
-        <option value="font43" style="font-family: font43;">thư pháp 43</option>
-        <option value="font44" style="font-family: font44;">thư pháp 44</option>
-        <option value="font45" style="font-family: font45;">thư pháp 45</option>
-        <option value="font46" style="font-family: font46;">thư pháp 46</option>
-        <option value="font47" style="font-family: font47;">thư pháp 47</option>
-        <option value="font_otf_1" style="font-family: font_otf_1;">thư pháp 48</option>
-        <option value="font_otf_2" style="font-family: font_otf_2;">thư pháp 49</option>
-        <option value="font_otf_3" style="font-family: font_otf_3;">thư pháp 50</option>
-        <option value="font_cn_1" style="font-family: font_cn_1;">thư pháp 51</option>
-        <option value="font_cn_2" style="font-family: font_cn_2;">thư pháp 52</option>
-        <option value="font_cn_3" style="font-family: font_cn_3;">thư pháp 53</option>
-        <option value="font_cn_4" style="font-family: font_cn_4;">thư pháp 54</option>
-        <option value="font_cn_5" style="font-family: font_cn_5;">thư pháp 55</option>
-        <option value="font_cn_6" style="font-family: font_cn_6;">thư pháp 56</option>
-        <option value="font_cn_7" style="font-family: font_cn_7;">thư pháp 57</option>
-        <option value="font_cn_8" style="font-family: font_cn_8;">thư pháp 58</option>
-        <option value="font_cn_9" style="font-family: font_cn_9;">thư pháp 59</option>
-        <option value="font_cn_10" style="font-family: font_cn_10;">thư pháp 60</option>
+    <select onchange="myFunction(this);" size="3" style="font-size: 20px;font-weight: bolder;">
+        <option value="font1" style="font-family: font1;">font1</option>
+        <option value="font2" style="font-family: font2;">font2</option>
+        <option value="font3" style="font-family: font3;">font3</option>
+        <option value="font4" style="font-family: font4;">font4</option>
+        <option value="font5" style="font-family: font5;">font5</option>
+        <option value="font6" style="font-family: font6;">font6</option>
+        <option value="font7" style="font-family: font7;">font7</option>
+        <option value="font8" style="font-family: font8;">font8</option>
+        <option value="font9" style="font-family: font9;">font9</option>
+        <option value="font10" style="font-family: font10;">font10</option>
+        <option value="font11" style="font-family: font11;">font11</option>
+        <option value="font12" style="font-family: font12;">font12</option>
+        <option value="font13" style="font-family: font13;">font13</option>
+        <option value="font14" style="font-family: font14;">font14</option>
+        <option value="font15" style="font-family: font15;">font15</option>
+        <option value="font16" style="font-family: font16;">font16</option>
+        <option value="font17" style="font-family: font17;">font17</option>
+        <option value="font18" style="font-family: font18;">font18</option>
+        <option value="font19" style="font-family: font19;">font19</option>
+        <option value="font20" style="font-family: font20;">font20</option>
+        <option value="font21" style="font-family: font21;">font21</option>
+        <option value="font22" style="font-family: font22;">font22</option>
+        <option value="font23" style="font-family: font23;">font23</option>
+        <option value="font24" style="font-family: font24;">font24</option>
+        <option value="font25" style="font-family: font25;">font25</option>
+        <option value="font26" style="font-family: font26;">font26</option>
+        <option value="font27" style="font-family: font27;">font27</option>
+        <option value="font28" style="font-family: font28;">font28</option>
+        <option value="font29" style="font-family: font29;">font29</option>
+        <option value="font30" style="font-family: font30;">font30</option>
+        <option value="font31" style="font-family: font31;">font31</option>
+        <option value="font32" style="font-family: font32;">font32</option>
+        <option value="font33" style="font-family: font33;">font33</option>
+        <option value="font34" style="font-family: font34;">font34</option>
+        <option value="font35" style="font-family: font35;">font35</option>
+        <option value="font36" style="font-family: font36;">font36</option>
+        <option value="font37" style="font-family: font37;">font37</option>
+        <option value="font38" style="font-family: font38;">font38</option>
+        <option value="font39" style="font-family: font39;">font39</option>
+        <option value="font40" style="font-family: font40;">font40</option>
+        <option value="font41" style="font-family: font41;">font41</option>
+        <option value="font42" style="font-family: font42;">font42</option>
+        <option value="font43" style="font-family: font43;">font43</option>
+        <option value="font44" style="font-family: font44;">font44</option>
+        <option value="font45" style="font-family: font45;">font45</option>
+        <option value="font46" style="font-family: font46;">font46</option>
+        <option value="font47" style="font-family: font47;">font47</option>
+        <option value="font_otf_1" style="font-family: font_otf_1;">font48</option>
+        <option value="font_otf_2" style="font-family: font_otf_2;">font49</option>
+        <option value="font_otf_3" style="font-family: font_otf_3;">font50</option>
+        <option value="font_cn_1" style="font-family: font_cn_1;">font51</option>
+        <option value="font_cn_2" style="font-family: font_cn_2;">font52</option>
+        <option value="font_cn_3" style="font-family: font_cn_3;">font53</option>
+        <option value="font_cn_4" style="font-family: font_cn_4;">font54</option>
+        <option value="font_cn_5" style="font-family: font_cn_5;">font55</option>
+        <option value="font_cn_6" style="font-family: font_cn_6;">font56</option>
+        <option value="font_cn_7" style="font-family: font_cn_7;">font57</option>
+        <option value="font_cn_8" style="font-family: font_cn_8;">font58</option>
+        <option value="font_cn_9" style="font-family: font_cn_9;">font59</option>
+        <option value="font_cn_10" style="font-family: font_cn_10;">font60</option>
     </select>
     <br>
     <br>
     Chọn màu chữ:
-    <input type="color" name="color" id="colorSelect" >
+    <input type="color" name="color" id="colorSelect" size="200">
     <br><br>
     <!-- -------------------------------------------------------------------------------- -->
     
@@ -174,33 +173,13 @@
         <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
       </form>
         <!-- -------------------------------------------------------------------------------- -->
-    <script>
-    function openForm() {
-      document.getElementById("myForm").style.display = "block";
-    }
-    
-    function closeForm() {
-      document.getElementById("myForm").style.display = "none";
-    }
-    </script>
-    
-   
-  
-
-
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://unpkg.com/draggabilly@3/dist/draggabilly.pkgd.js"></script>
  <script>
-   let $draggable = $('.draggable').draggabilly();
-        document.getElementById("fontSelect").addEventListener("change", function() {
-         document.getElementById("text").style.fontFamily = this.value;
-          document.getElementById("fontSelect").style.fontFamily = this.value;
-        });
+ //  let $draggable = $('.draggable').draggabilly();
         document.getElementById('colorSelect').addEventListener("change", function() {
-            document.getElementById("text").style.color= this.value;
+            document.getElementById("txtext").style.color= this.value;
         }); 
-    
           // Một hàm để thay đổi hình ảnh khi chọn vào một hình ảnh khác
           function changeImage(event) {
             // Lấy phần tử img bằng id
@@ -209,7 +188,61 @@
             // Thay đổi thuộc tính src của phần tử img bằng thuộc tính src của hình ảnh được chọn
             image.src = event.target.src;
           }
+          function myFunction(selectTag) {
+            var listValue = selectTag.options[selectTag.selectedIndex].text;
+            document.getElementById("txtext").style.fontFamily = listValue;
+          }
         </script>
+        <script>
+          function openForm() {
+            document.getElementById("myForm").style.display = "block";
+          }
+          
+          function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+          }
+          </script>
+          <script>
+            // Make the DIV element draggable:
+            dragElement(document.getElementById("tx"));
+            
+            function dragElement(elmnt) {
+              var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+            
+                // otherwise, move the DIV from anywhere inside the DIV:
+                elmnt.onmousedown = dragMouseDown;
+            
+              function dragMouseDown(e) {
+                e = e || window.event;
+                e.preventDefault();
+                // get the mouse cursor position at startup:
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                document.onmouseup = closeDragElement;
+                // call a function whenever the cursor moves:
+                document.onmousemove = elementDrag;
+              }
+            
+              function elementDrag(e) {
+                e = e || window.event;
+                e.preventDefault();
+                // calculate the new cursor position:
+                pos1 = pos3 - e.clientX;
+                pos2 = pos4 - e.clientY;
+                pos3 = e.clientX;
+                pos4 = e.clientY;
+                // set the element's new position:
+                elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+                elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+              }
+            
+              function closeDragElement() {
+                // stop moving when mouse button is released:
+                document.onmouseup = null;
+                document.onmousemove = null;
+              }
+            }
+            </script>
 
 </body>
 </html>

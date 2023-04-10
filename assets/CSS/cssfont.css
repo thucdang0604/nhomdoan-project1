@@ -1,0 +1,521 @@
+@font-face {
+    font-family: font1;
+    font-display: block;
+    src: url(./fonts/font1.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font2;
+    font-display: block;
+    src: url(./fonts/font2.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font3;
+    font-display: block;
+    src: url(./fonts/font3.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font4;
+    font-display: block;
+    src: url(./fonts/font4.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font5;
+    font-display: block;
+    src: url(./fonts/font5.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font6;
+    font-display: block;
+    src: url(./fonts/font6.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font7;
+    font-display: block;
+    src: url(./fonts/font7.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font8;
+    font-display: block;
+    src: url(./fonts/font8.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font9;
+    font-display: block;
+    src: url(./fonts/font9.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font10;
+    font-display: block;
+    src: url(./fonts/font10.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font11;
+    font-display: block;
+    src: url(./fonts/font11.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font12;
+    font-display: block;
+    src: url(./fonts/font12.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font13;
+    font-display: block;
+    src: url(./fonts/font13.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font14;
+    font-display: block;
+    src: url(./fonts/font14.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font15;
+    font-display: block;
+    src: url(./fonts/font15.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font16;
+    font-display: block;
+    src: url(./fonts/font16.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font17;
+    font-display: block;
+    src: url(./fonts/font17.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font18;
+    font-display: block;
+    src: url(./fonts/font18.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font19;
+    font-display: block;
+    src: url(./fonts/font19.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font20;
+    font-display: block;
+    src: url(./fonts/font20.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font21;
+    font-display: block;
+    src: url(./fonts/font21.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font22;
+    font-display: block;
+    src: url(./fonts/font22.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font23;
+    font-display: block;
+    src: url(./fonts/font23.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font24;
+    font-display: block;
+    src: url(./fonts/font24.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font25;
+    font-display: block;
+    src: url(./fonts/font25.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font26;
+    font-display: block;
+    src: url(./fonts/font26.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font27;
+    font-display: block;
+    src: url(./fonts/font27.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font28;
+    font-display: block;
+    src: url(./fonts/font28.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font29;
+    font-display: block;
+    src: url(./fonts/font29.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font30;
+    font-display: block;
+    src: url(./fonts/font30.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font31;
+    font-display: block;
+    src: url(./fonts/font31.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font32;
+    font-display: block;
+    src: url(./fonts/font32.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font33;
+    font-display: block;
+    src: url(./fonts/font33.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font34;
+    font-display: block;
+    src: url(./fonts/font34.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font35;
+    font-display: block;
+    src: url(./fonts/font35.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font36;
+    font-display: block;
+    src: url(./fonts/font36.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font37;
+    font-display: block;
+    src: url(./fonts/font37.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font38;
+    font-display: block;
+    src: url(./fonts/font38.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font39;
+    font-display: block;
+    src: url(./fonts/font39.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font40;
+    font-display: block;
+    src: url(./fonts/font40.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font41;
+    font-display: block;
+    src: url(./fonts/font41.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font42;
+    font-display: block;
+    src: url(./fonts/font42.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font43;
+    font-display: block;
+    src: url(./fonts/font43.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font44;
+    font-display: block;
+    src: url(./fonts/font44.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font45;
+    font-display: block;
+    src: url(./fonts/font45.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font46;
+    font-display: block;
+    src: url(./fonts/font46.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font47;
+    font-display: block;
+    src: url(./fonts/font47.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font_otf_1;
+    font-display: block;
+    src: url(./fonts/font_otf_1.otf) format('opentype')
+}
+
+@font-face {
+    font-family: font_otf_2;
+    font-display: block;
+    src: url(./fonts/font_otf_2.otf) format('opentype')
+}
+
+@font-face {
+    font-family: font_otf_3;
+    font-display: block;
+    src: url(./fonts/font_otf_3.otf) format('opentype')
+}
+
+@font-face {
+    font-family: font_cn_1;
+    font-display: block;
+    src: url(./fonts/font_cn_1.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font_cn_2;
+    font-display: block;
+    src: url(./fonts/font_cn_2.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font_cn_3;
+    font-display: block;
+    src: url(./fonts/font_cn_3.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font_cn_4;
+    font-display: block;
+    src: url(./fonts/font_cn_4.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font_cn_5;
+    font-display: block;
+    src: url(./fonts/font_cn_5.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font_cn_6;
+    font-display: block;
+    src: url(./fonts/font_cn_6.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font_cn_7;
+    font-display: block;
+    src: url(./fonts/font_cn_7.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font_cn_8;
+    font-display: block;
+    src: url(./fonts/font_cn_8.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font_cn_9;
+    font-display: block;
+    src: url(./fonts/font_cn_9.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: font_cn_10;
+    font-display: block;
+    src: url(./fonts/font_cn_10.ttf) format('truetype')
+}
+ #txtext{
+ 
+    font-family: font1;
+    font-size: 50px;
+    width: 100%;
+    height: 100%;
+    cursor: move;
+    top: 0;
+    left: 0;
+    }
+
+
+div img {
+    border: 1px solid #ddd; /* Gray border */
+    border-radius: 4px;  /* Rounded border */
+    padding: 5px; /* Some padding */
+    width: 150px; /* Set a small width */
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  /* Add a hover effect (blue shadow) */
+  img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  }
+  body {font-family: Arial, Helvetica, sans-serif;}
+  
+* {box-sizing: border-box;}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 10;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 640px;
+  padding: 10px;
+  background-color: white;
+}
+form img {
+width: 200px;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 80%;
+    position: relative;
+}
+
+  
+  .list {
+    margin-top: 10px;
+  }
+  
+  .item {
+    display: inline-block;
+  }
+  
+  .delete {
+    margin-left: 2px;
+  }  
+  .navbar {
+    width: 99%;
+    background-color: #555;
+    overflow: auto;
+  }
+  
+  .navbar a {
+    float: left;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    width: 25%; /* Four links of equal widths */
+    text-align: center;
+  }
+  
+  .navbar a:hover {
+    background-color: #000;
+  }
+  
+  .navbar a.active {
+    background-color: #04AA6D;
+  }
+  
+  @media screen and (max-width:100%) {
+    .navbar a {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left;
+      height: 100%;
+    }
+  }
+  #navbar {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  #navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  #tx {
+    text-align: center;
+  }
+  
+     
