@@ -11,7 +11,6 @@
     scroll-snap-type: x mandatory;
     scroll-padding: 24px;
     border-radius: 8px;
-    gap: 12px;
     margin: 2rem auto;
 }
 .container .item{
@@ -26,7 +25,7 @@ main{
     margin: auto;
   }
 .navbar {
-  width: 99%;
+  width: 100%;
   background-color: #555;
   overflow: auto;
 }
@@ -90,6 +89,7 @@ body {
     position: relative;
    margin-right: auto;
     display: inline;
+    float: right;
   }
   
   .dropdown-content {
@@ -122,9 +122,9 @@ body {
 .logo img {
     width: 200px;
     height: 200px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 45%;
+        margin-right: 45%;
+        float: left;
 }
 
 #myBtn {
